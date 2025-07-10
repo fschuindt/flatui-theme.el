@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t -*-
+
 ;;; flatui-theme.el --- A color theme for Emacs based on flatuicolors.com
 
 ;; Copyright (C) 2014 John Louis Del Rosario
