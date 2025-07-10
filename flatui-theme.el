@@ -469,24 +469,26 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(show-paren-mismatch ((t (:foreground ,sun-flower :background ,pomegranate :weight bold))))
    `(show-paren-match ((t (:foreground ,clouds :background ,amethyst :weight bold))))
 ;;;;; mode-line/sml-mode-line
-   `(mode-line
-     ((,class (:inverse-video unspecified
-                              :underline unspecified
-                              :foreground ,peter-river
-                              :background ,wet-asphalt
-                              :weight bold
-                              :box (:line-width 1
-                                                :color ,wet-asphalt
-                                                :style unspecified)))
-      (t :inverse-video t)))
-   `(mode-line-inactive
-     ((t (:inverse-video unspecified
-                         :underline unspecified
-                         :foreground ,peter-river
-                         :background ,silver
-                         :box (:line-width 1
-                                           :color ,silver
-                                           :style unspecified)))))
+    `(mode-line
+       ((,class (:inverse-video nil
+		  :underline nil
+		  :foreground ,peter-river
+		  :background ,wet-asphalt
+		  :weight bold
+		  :box (:line-width 1
+			 :color ,wet-asphalt
+			 :style nil)))
+	 (t :inverse-video t)))
+
+    `(mode-line-inactive
+       ((t (:inverse-video nil
+	     :underline nil
+	     :foreground ,peter-river
+	     :background ,silver
+	     :box (:line-width 1
+		    :color ,silver
+		    :style nil)))))
+
    `(mode-line-buffer-id ((t (:foreground ,alizarin :weight bold))))
    `(sml/global ((t (:foreground ,concrete))))
    `(sml/modes ((t (:foreground ,nephritis))))
